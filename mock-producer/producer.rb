@@ -1,4 +1,4 @@
-require_relative "initializer"
+require_relative "../initializer"
 
 WaterDrop.setup do |config|
   config.send_messages = true
@@ -12,7 +12,7 @@ file = File.read('log.json')
 file_hash = JSON.parse(file)
 
 file_hash.each{ |log|
-  message = WaterDrop::Message.new('test', log.to_json)
+  message = WaterDrop::Message.new(ENV["kafka_topic"], log.to_json)
   message.send!
 
  }

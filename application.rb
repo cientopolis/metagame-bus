@@ -8,17 +8,21 @@ kafka = Kafka.new(
   client_id: "metagame",
 )
 
+#REST client
+connection = Faraday.new(:url => ENV["metagame_api"]) do |faraday|
+  faraday.request  :url_encoded             # form-encode POST params
+  faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+end
+
+
 # Consumers with the same group id will form a Consumer Group together.
-consumer = kafka.consumer(group_id: "my-consumer")
+#TODO: Ver grupos kafka 
+consumer = kafka.consumer(group_id: "metagame-group")
 
 # It's possible to subscribe to multiple topics by calling `subscribe`
 # repeatedly.
 consumer.subscribe(ENV["kafka_topic"])
 
-connection = Faraday.new(:url => ENV["metagame_api"]) do |faraday|
-  faraday.request  :url_encoded             # form-encode POST params
-  faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
-end
 
 
 # This will loop indefinitely, yielding each message in turn.

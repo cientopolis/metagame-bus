@@ -21,8 +21,8 @@ Testing
 -------
 
 For testing there is an api-test folder.
-  1. Execute: bundle exec ruby api-test/app.rb. The api will be running on:
+  1. Execute: bundle exec ruby mock-api/app.rb. The api will be running on:
   "http:/localhost:4567"
   2. Execute: bundle exec ruby application.rb  
-  3. Execute: bundle exec ruby producer.rb (This will generate a message).
+  3. Execute: bundle exec ruby mock-producer/producer.rb (This will generate a message).
   4. Check the prompt of the API.
