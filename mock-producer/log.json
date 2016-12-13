@@ -1,16 +1,7 @@
-[
 {
-  "project": "galaxy-conqueror/puppis-window",
+  "project": "galaxy-conqueror",
   "subject": "default",
-  "event": "contribution",
+  "event": "reinforcement",
   "timestamp": "2012-04-23T18:25:43.511Z",
-  "userid": "santiagopravisani@gmail.com",
-  "arguments": [
-    {
-      "x": 10,
-      "y": 20,
-      "markid": 5612
-    }
-  ] 
+  "userid": "santiagopravisani@gmail.com"
 }
-]

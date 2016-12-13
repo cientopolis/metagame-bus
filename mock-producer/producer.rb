@@ -11,8 +11,9 @@ end
 file = File.read('log.json')
 file_hash = JSON.parse(file)
 
-file_hash.each{ |log|
-  message = WaterDrop::Message.new(ENV["kafka_topic"], log.to_json)
-  message.send!
+binding.pry
 
- }
+10.times do
+  message = WaterDrop::Message.new(ENV["kafka_topic"], file_hash.to_json)
+  message.send!
+end  

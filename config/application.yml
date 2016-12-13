@@ -13,7 +13,7 @@
 development: 
   kafka_server: "localhost:9092"
   kafka_topic: "test"
-  metagame_api: "http://localhost:4567"
+  metagame_api: "http://localhost:3000"
 
 production:
   kafka_server: "localhost:9092"
