@@ -26,6 +26,7 @@ consumer.each_message do |message|
   begin
     mp.send_message(message.value) 
   rescue
+    
     next
   end  
 end

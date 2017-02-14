@@ -26,7 +26,7 @@ nohup ${KAFKA_ROOT}/bin/kafka-server-start.sh  ${KAFKA_ROOT}/config/server.prope
 
 
 #Start some topic
-TOPIC="test"
+TOPIC="metagame"
 #${KAFKA_ROOT}/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic ${TOPIC}
 ${KAFKA_ROOT}/bin/kafka-topics.sh --list --zookeeper localhost:2181
 
