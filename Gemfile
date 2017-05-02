@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-#Gem for client of kafka 
+#Gem for client of kafka
 gem "ruby-kafka"
 #Gem for environment variables
 gem "figaro"
@@ -17,3 +17,6 @@ gem "sinatra"
 
 #Gem for generate API requests
 gem "faraday"
+
+#To generate some cool random data!
+gem "faker"

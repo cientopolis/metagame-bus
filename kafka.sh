@@ -7,10 +7,10 @@ SCALA_VERSION="2.11"
 KAFKA_VERSION="0.9.0.0"
 CLUSTER_NAME=$(hostname | sed 's/\(.*\)-[m|w]-[0-9]*.*/\1/g')
 BROKER_ID=$(hostname | sed 's/.*-w-\([0-9]\)*.*/\1/g')
-DNS_NAME=$(dnsdomainname)
+DNS_NAME=$(domainname)
 
 KAFKA_ROOT="kafka_${SCALA_VERSION}-${KAFKA_VERSION}"
-cd "/usr/bin"
+cd "/usr/local"
 
 if [ ! -d "$KAFKA_ROOT" ]; then
   # Download and extract Kafka

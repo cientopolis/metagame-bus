@@ -10,12 +10,12 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
-development: 
-  kafka_server: "localhost:9092"
-  kafka_topic: "test"
-  metagame_api: "http://localhost:3000"
+development:
+  KAFKA_SERVER: "localhost:9092"
+  KAFKA_TOPIC:  "metagame"
+  METAGAME_API: "http://localhost:3000"
 
 production:
-  kafka_server: "localhost:9092"
-  kafka_topic: "metagame"
-  metagame_api: "localhost:4567"  
+  KAFKA_SERVER: "localhost:9092"
+  KAFKA_TOPIC: "metagame"
+  #metagame_api: "localhost:4567"

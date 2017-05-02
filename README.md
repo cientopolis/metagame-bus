@@ -14,15 +14,12 @@ Configuration
 
 Usage
 -------
-  1. Execute: bundle exec application.rb
-  2. The application will be running posting each event to ENV["metagame_api"].
+  1. Execute: bundle exec ruby application.rb
+  2. The application will be running posting each event to ENV["METAGAME_API"].
 
 Testing
 -------
 
-For testing there is an api-test folder.
-  1. Execute: bundle exec ruby mock-api/app.rb. The api will be running on:
-  "http:/localhost:4567"
-  2. Execute: bundle exec ruby application.rb  
-  3. Execute: bundle exec ruby mock-producer/producer.rb (This will generate a message).
-  4. Check the prompt of the API.
+For testing there inside the test folder you can find:
+- mock-api: A Sinatra API to check te conectivity of this bus.
+- mock-producer: A mock-player which makes actions in the Metagame.
