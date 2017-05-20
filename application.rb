@@ -18,7 +18,10 @@ consumer = kafka.consumer(group_id: "metagame-group")
 consumer.subscribe(ENV["KAFKA_TOPIC"])
 
 mp = MessageProcessor.new
-
+puts "Starting Metagame Bus.."
+puts "Client ID: metagame"
+puts "Topic: metagame"
+puts "Now you can send your messges to Kafka.. Have fun!"
 # This will loop indefinitely, yielding each message in turn.
 consumer.each_message do |message|
   #puts message.topic, message.partition,message.offset, message.value

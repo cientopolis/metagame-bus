@@ -41,9 +41,9 @@ class PlayerPersona
     #Visitor -> Explorer.
     make_a_play(@projects.first,:login,2)
     #Explorer->Citizen Scientist.
-    make_a_play(@projects.first,:contribution,4)
-    make_a_play(@projects.first,:reinforcement,4)
-    make_a_play(@projects.first,:dissemination,2)
+    make_a_play(@projects.first,:contribution,10)
+    make_a_play(@projects.first,:reinforcement,10)
+    make_a_play(@projects.first,:dissemination,10)
   end
 
   private
