@@ -1,0 +1,12 @@
+# Change the values of the keys presented in this file, and save it in a file called: application.yml
+
+# development:
+#   KAFKA_SERVER: "localhost:9092"
+#   KAFKA_TOPIC:  "metagame"
+#   METAGAME_API: "http://localhost:5000"
+
+# production:
+#   KAFKA_SERVER: "localhost:9092"
+#   KAFKA_TOPIC: "metagame"
+#   METAGAME_API: "http://localhost:5000"
+

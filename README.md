@@ -17,7 +17,8 @@ You will need the following to be installed:
 
 ## Configuration
 
-  * All the environment variables are in config/application.yml
+  * All the environment variables should be in config/application.yml
+  * Create a new file called application.yml inside the config/ folder following the application_example.yml
 
 ## Usage
   1. Execute: bundle exec ruby application.rb
