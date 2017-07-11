@@ -1,34 +1,35 @@
 require_relative "../../initializer"
 require_relative "player_persona"
 
-#Generalist Player
+# Generalist Player
+# A player who participates in different projects.
 generalist = PlayerPersona.new(
   projects:["galaxy-conqueror","spotters","colaboratory"],
   email:Faker::Internet.email,
   interests:[:contribution,:reinforcement,:dissemination])
 
-#Specialist
+# Specialist player
 # A hardcore player who likes to make contributions.
 specialist = PlayerPersona.new(
   projects:["galaxy-conqueror"],
   email:Faker::Internet.email,
   interests:[:contribution])
 
-#Networker
-# A playe who like to interact with other players.
+#Networker player
+# A player who like to interact with other players.
 networker = PlayerPersona.new(
   projects:["galaxy-conqueror"],
   email:Faker::Internet.email,
   interests:[:reinforcement])
 
-#Disseminator
+#Disseminator player
 # A player who like to share their actions in social media.
 disseminator = PlayerPersona.new(
   projects:["galaxy-conqueror"],
   email:Faker::Internet.email,
   interests:[:dissemination])
 
-#Random
+#Random player
 # A player who makes random actions.
 random = PlayerPersona.new(
   projects:["galaxy-conqueror","spotters"],
