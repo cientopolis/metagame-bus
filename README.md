@@ -8,17 +8,27 @@ You will need the following to be installed:
 
 * Ruby language (2.3)
 * Bundler (http://bundler.io/)
+* Kafka installed and running
 
-##Installation
+## Installation
 
-(Prerequisite: Have installed [Bundler ](http://bundler.io/))
- 1. Move to the metagame-bus main folder.
- 2. Execute: bundle install
+ (In case you have installed Apache Kafka, ignore the first step)
+ 1. If you don't have Apache Kafka installed there is a file called kafka.sh. You can also change the version inside the script. To install it run:
 
+  ```
+  $ sudo ./kafka.sh
+
+  ```
+
+ 2. Move to the metagame-bus main folder and execute:
+  ```
+   $ bundle install
+
+  ```
 ## Configuration
 
   * All the environment variables should be in config/application.yml
-  * Create a new file called application.yml inside the config/ folder following the application_example.yml
+  * Create a new file called application.yml inside the config/ folder following the application_example.yml as example.
 
 ## Usage
   1. Execute: bundle exec ruby application.rb

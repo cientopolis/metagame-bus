@@ -4,7 +4,7 @@
 #   KAFKA_SERVER: "localhost:9092"
 #   KAFKA_TOPIC:  "metagame"
 #   METAGAME_API: "http://localhost:5000"
-
+#   METAGAME_TOKEN: "exampl3t0k3n67aa91d94ffb98c386ca9c2f5f18"
 # production:
 #   KAFKA_SERVER: "localhost:9092"
 #   KAFKA_TOPIC: "metagame"

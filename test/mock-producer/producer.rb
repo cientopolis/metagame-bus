@@ -4,7 +4,7 @@ require_relative "player_persona"
 # Generalist Player
 # A player who participates in different projects.
 generalist = PlayerPersona.new(
-  projects:["galaxy-conqueror","spotters","colaboratory"],
+  projects:["galaxy-conqueror","spotters","colaboratory","cientopolis"],
   email:Faker::Internet.email,
   interests:[:contribution,:reinforcement,:dissemination])
 
@@ -18,7 +18,7 @@ specialist = PlayerPersona.new(
 #Networker player
 # A player who like to interact with other players.
 networker = PlayerPersona.new(
-  projects:["galaxy-conqueror"],
+  projects:["cientopolis"],
   email:Faker::Internet.email,
   interests:[:reinforcement])
 

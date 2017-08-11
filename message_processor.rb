@@ -9,6 +9,7 @@ class MessageProcessor
     @connection = Faraday.new(:url => ENV["METAGAME_API"]) do |faraday|
       faraday.request  :url_encoded             # form-encode POST params
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
+      faraday.authorization :Token, token: ENV["METAGAME_TOKEN"]
     end
   end
 
